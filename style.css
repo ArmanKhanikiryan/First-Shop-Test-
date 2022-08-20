@@ -1,0 +1,190 @@
+.divImg{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 1.5px 2.6px 7px rgb(0 0 0 / 4%);
+    box-shadow: 1.5px 2.6px 7px rgb(0 0 0 / 4%);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-bottom: 30px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img{
+    width: 140px;
+    height: 100px;
+}
+.paragraph{
+    font-size: 12px;
+    text-align: center;
+}
+.header{
+    position: relative;
+    height: 200px;
+}
+.price{
+    text-align: center;
+}
+
+.button{
+    position: absolute;
+    left: 65px;
+    top: 190px;
+}
+
+.cardListPng{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: calc(100% - 80px);
+    top: 100px;
+}
+.wishList{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: calc(100% - 80px);
+    top: 31px;
+}
+
+.backIcon{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: calc(100% - 80px);
+    top: 100px;
+}
+
+.cardImg{
+    width: 140px;
+    height: 100px;
+}
+
+.cardImageDiv{
+    border: 1px solid #e5e5e5;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 1.5px 2.6px 7px rgb(0 0 0 / 4%);
+    box-shadow: 1.5px 2.6px 7px rgb(0 0 0 / 4%);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-bottom: 30px;
+}
+
+.counter{
+    position: absolute;
+    top: 110px;
+    right: 12px;
+    border-radius: 5px;
+}
+.wishCounter{
+    position: absolute;
+    border-radius: 5px;
+    left: calc(100% - 36px);
+    top: 40px;
+}
+
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.companyName{
+    position: absolute;
+    left: 210px;
+    top: 35px;
+    font-size: 35px;
+}
+body{
+    background-color: #B9D9EB
+}
+
+.input{
+    position: absolute;
+    width: 350px;
+    height: 35px;
+    left: 550px;
+    top: 70px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.container{
+    position: relative;
+}
+.dollar{
+    position: absolute;
+    left: 105px;
+    top: 161px;
+}
+.cardPrice{
+    position: absolute;
+    left: 400px;
+}
+.cardInfo{
+    position: absolute;
+    left: 500px;
+}
+.cardDollar{
+    position: absolute;
+    left: 437px;
+    top: 15px;
+}
+.cardCounter{
+    position: absolute;
+    left: calc(100% - 250px);
+    top: 113px;
+}
+.emptyHeart{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 183px;
+}
+.fullHeart{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 183px;
+}
+.about{
+    position: absolute;
+    left: 1010px;
+    top: 45px;
+    font-size: 25px;
+}
+.home{
+    position: absolute;
+    left: 1110px;
+    top: 45px;
+    font-size: 25px;
+}
+.contact{
+    position: absolute;
+    left: 1210px;
+    top: 45px;
+    font-size: 25px;
+}
