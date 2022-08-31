@@ -33,8 +33,8 @@ imgArr.forEach((element, index) => {
     let price = document.createElement('p');
     let info = document.createElement('p')
     let paragraph = document.createElement('p')
-    full.setAttribute('src', 'fullHeart.png')
-    empty.setAttribute('src', 'emptyHeart.png')
+    full.setAttribute('src', 'images/fullHeart.png')
+    empty.setAttribute('src', 'images/emptyHeart.png')
     full.className = 'fullHeart';
     empty.className = 'emptyHeart'
     info.className = 'info';
@@ -47,7 +47,7 @@ imgArr.forEach((element, index) => {
     divImg.className = 'divImg'
     img.className = 'img'
     price.className = 'price';
-    button.innerText = 'Add'
+    button.innerText = 'Buy'
     paragraph.innerText = element.name;
     price.innerText = element.price;
     img.setAttribute('src', element.elem)
@@ -104,10 +104,11 @@ imgArr.forEach((element, index) => {
     
     input.addEventListener('input', (event) => {
         let inputNames = [...document.querySelectorAll('.paragraph')]
-        console.log(inputNames[0].innerText)
         inputNames.forEach((el, index) => {
-            if (!el.innerText.includes(input.value)) {
+            if (!el.innerText.toLowerCase().includes(input.value.toLowerCase())) {
                 el.parentElement.style.display = 'none'
+            }else{
+                el.parentElement.style.display = '';
             }
         })
     })
