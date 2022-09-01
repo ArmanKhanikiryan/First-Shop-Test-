@@ -65,23 +65,56 @@ imgArr.forEach((element, index) => {
     button.addEventListener('click', () => {
         counter.style.display = 'block'
         counter.innerText = +counter.innerText + 1;
-        if (cardList[index] === undefined) {
-            cardList[index] = {
-                img: element.elem,
-                price: element.price,
-                info: element.info,
-                dollar: dollar.innerText
-            };
-            }
-         else
-        {
-                    cardList[index + 1] = {
-                        img: element.elem,
-                        price: element.price,
-                        info: element.info,
-                        dollar: dollar.innerText
-                }
-            }
+        
+         if (cardList[index] === undefined) {
+             cardList[index] = {
+                 img: element.elem,
+                 price: element.price,
+                 info: element.info,
+                 dollar: dollar.innerText
+             };
+         }
+        else if (cardList[index + 1] === undefined) {
+             cardList[index + 1] = {
+                 img: element.elem,
+                 price: element.price,
+                 info: element.info,
+             };
+         }
+        else if (cardList[index + 2] === undefined) {
+             cardList[index + 2] = {
+                 img: element.elem,
+                 price: element.price,
+                 info: element.info,
+             };
+         }
+         else if (cardList[index + 3] === undefined) {
+             cardList[index + 3] = {
+                 img: element.elem,
+                 price: element.price,
+                 info: element.info,
+             };
+         }
+         else if (cardList[index + 4] === undefined) {
+             cardList[index + 4] = {
+                 img: element.elem,
+                 price: element.price,
+                 info: element.info,
+             };
+         }
+        
+        
+        
+            //     }
+        //  else
+        // {
+        //             cardList[index + 1] = {
+        //                 img: element.elem,
+        //                 price: element.price,
+        //                 info: element.info,
+        //                 dollar: dollar.innerText
+        //         }
+        //     }
         numForCard += +cardList[index].price
         cardHeader.innerText = numForCard;
     })
@@ -102,9 +135,9 @@ imgArr.forEach((element, index) => {
     })
     
     
-    input.addEventListener('input', (event) => {
+    input.addEventListener('input', () => {
         let inputNames = [...document.querySelectorAll('.paragraph')]
-        inputNames.forEach((el, index) => {
+        inputNames.forEach((el,) => {
             if (!el.innerText.toLowerCase().includes(input.value.toLowerCase())) {
                 el.parentElement.style.display = 'none'
             }else{
@@ -190,3 +223,4 @@ backIcon.addEventListener('click', () => {
         delete cardList[i];
     }
 })
+
