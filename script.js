@@ -79,6 +79,8 @@ imgArr.forEach((element, index) => {
                  img: element.elem,
                  price: element.price,
                  info: element.info,
+                 dollar: dollar.innerText
+    
              };
          }
         else if (cardList[index + 2] === undefined) {
@@ -86,6 +88,8 @@ imgArr.forEach((element, index) => {
                  img: element.elem,
                  price: element.price,
                  info: element.info,
+                 dollar: dollar.innerText
+    
              };
          }
          else if (cardList[index + 3] === undefined) {
@@ -93,6 +97,8 @@ imgArr.forEach((element, index) => {
                  img: element.elem,
                  price: element.price,
                  info: element.info,
+                 dollar: dollar.innerText
+    
              };
          }
          else if (cardList[index + 4] === undefined) {
@@ -100,21 +106,10 @@ imgArr.forEach((element, index) => {
                  img: element.elem,
                  price: element.price,
                  info: element.info,
+                 dollar: dollar.innerText
+    
              };
          }
-        
-        
-        
-            //     }
-        //  else
-        // {
-        //             cardList[index + 1] = {
-        //                 img: element.elem,
-        //                 price: element.price,
-        //                 info: element.info,
-        //                 dollar: dollar.innerText
-        //         }
-        //     }
         numForCard += +cardList[index].price
         cardHeader.innerText = numForCard;
     })
